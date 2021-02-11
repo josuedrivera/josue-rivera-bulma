@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+/*
+defining 1rem
+
+1rem = 10px 
+10/16 = 65.5%
+
+8/16 = 50%
+9/16 = 56.25%
+12/16 = 75%
+*/    
+    font-size: 62.5%;
+
+    // @include respond(tab-land) {
+    //     font-size: 56.25%;
+    // }
+
+    // @include respond(tab-port) {
+    //     font-size: 50%;
+    // }
+
+    // @include respond(big-desktop) {
+    //     font-size: 75%;
+    // }
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    // @include respond(tab-port) {
+    //     padding: 0;
+    // }
+}
+
+::selection {
+    // background-color: $color-primary;
+    // color: $color-white;
+}

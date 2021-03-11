@@ -1,19 +1,4 @@
-#welcome {
-    background-image: url("../img/webSketch.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-#welcome-hero-container {
-    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
-}
-
-#welcome-hero-container:hover {
-    font-weight: 900;
-    text-shadow: 1px 1px 2px #80b345, 0 0 1em #80b345, 0 0 0.2em #80b345;
-}
 
 #headshot {
     max-width: 30%;

@@ -3,6 +3,7 @@ const headshot = {
   
 	`
 }
+
 const aboutMe = {
 	template: `
     <div class="has-background-warning">
@@ -15,6 +16,7 @@ const aboutMe = {
     </div>
 	`
 }
+
 const hardSkills = {
 	template: `
     <div class="container is-fluid has-background-light">
@@ -51,6 +53,7 @@ const hardSkills = {
     </div>
 	`
 }
+
 const softSkills = {
 	template: `
     <div class="column is-10 has-background-info">

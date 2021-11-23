@@ -174,3 +174,49 @@ const spaceMan = {
   </div>
   `
 }
+
+
+
+
+
+const router = new VueRouter({
+	routes: [
+		{
+			path: '/',
+			component: headshot
+		},
+		{
+			path: '/aboutMe',
+			component: aboutMe
+		},
+		{
+			path: '/hardSkills',
+			component: hardSkills
+
+		},
+		{
+			path: '/softSkills',
+			component: softSkills
+
+		},
+    {
+			path: '/spaceMan',
+			component: spaceMan
+
+		},
+		{
+			path: '/one',
+			component: one
+		},
+		{
+			path: '/two',
+			component: two
+
+		},
+		{
+			path: '/three',
+			component: three
+
+		}
+	]
+})

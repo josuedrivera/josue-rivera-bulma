@@ -220,3 +220,28 @@ const router = new VueRouter({
 		}
 	]
 })
+
+
+var profile = new Vue({
+	router,
+	el: '#about-me',
+	data: {
+
+	},
+	methods: {
+
+	}
+}).$mount('#about-me')
+
+
+
+var projects = new Vue({
+	router,
+	el: '#project-slides',
+	data: {
+
+	},
+	methods: {
+
+	}
+}).$mount('#project-slides')

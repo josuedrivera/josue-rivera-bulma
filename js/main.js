@@ -245,3 +245,34 @@ var projects = new Vue({
 
 	}
 }).$mount('#project-slides')
+
+// const display = new VueRouter({
+// 	routes: [
+// 		{
+// 			path: '/one',
+// 			component: one
+// 		},
+// 		{
+// 			path: '/two',
+// 			component: two
+
+// 		},
+// 		{
+// 			path: '/three',
+// 			component: three
+
+// 		}
+// 	]
+// })
+
+
+// var Work = new Vue({
+// 	router,
+// 	el: '#project-slides',
+// 	data: {
+
+// 	},
+// 	methods: {
+
+// 	}
+// }).$mount('#project-slides')

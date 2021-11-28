@@ -303,3 +303,48 @@ var projects = new Vue({
   
 //   '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
 // });
+
+// const carouselApp = {
+// 	template: `
+//     <div id="appCarousel" class="app">
+//         <carousel
+//         @next="next"
+//         @prev="prev">
+//             <!-- for key use id ??? -->
+//             <carousel-slide 
+//             v-for="(slide,index) in slides"
+//             :key="slide"
+//             :index="index"
+//             :visibleSlide="visibleSlide"
+//             :direction="direction"> 
+//                 <img :src="slide" />
+//             </carousel-slide>
+//         </carousel>
+//     </div>
+// 	`
+// }
+
+// const Carousel = {
+// 	template: `
+//     <div id="carouselCon" class="carousel">
+//         <slot></slot>
+        
+//         <button @click="next" class="next">Next</button>
+//         <button @click="prev" class="prev">Prev</button>
+//     </div>
+// 	`
+// }
+
+// const carouselSlide = {
+// const Slide = {
+// 	template: `
+//     <transition
+//     id="carouselViewer"
+//     :name="direction"
+//     mode="in-out">
+//         <div v-show="visibleSlide === index" class="carousel-slide">
+//             <slot></slot>
+//         </div>
+//     </transition>
+// 	`
+// }

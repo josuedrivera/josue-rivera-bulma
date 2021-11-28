@@ -276,3 +276,30 @@ var projects = new Vue({
 
 // 	}
 // }).$mount('#project-slides')
+
+
+// Vue.component('button-counter', {
+//     data: function () {
+//       return {
+//         count: 0
+//       }
+//     },
+//     template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+//   })
+
+
+
+
+
+
+// new Vue({
+// 	el: '#appCarousel',
+//   components: {
+//   	'carousel': VueCarousel.Carousel,
+//     'slide': VueCarousel.Slide
+//   },
+//   template:
+//   '<div id="" class="app"><carousel @next="next" @prev="prev"><carousel-slide v-for="(slide,index) in slides":key="slide":index="index":visibleSlide="visibleSlide":direction="direction"><img :src="slide" /></carousel-slide></carousel></div>'
+  
+//   '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
+// });

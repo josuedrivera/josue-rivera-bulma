@@ -390,3 +390,35 @@ var projects = new Vue({
 //         Slide,
 //     }
 // }).$mount('#appCarousel')
+
+// const carouselCon = new Vue({
+// 	el: '#carouselCon',
+// 	data() {
+//         return {
+
+//         }
+//     }, 
+//     methods: {
+//         next() {
+//             this.$emit('next')
+//         },
+//         prev() {
+//             this.$emit('prev')
+//         }
+//     }
+// }).$mount('#carouselCon')
+
+// const carouselViewer = new Vue({
+// 	el: '#carouselViewer',
+// 	props: ['visibleSlide', 'index', 'direction'],
+//     data() {
+//         return {
+
+//         }
+//     },
+// }).$mount('#carouselViewer')
+
+
+// Vue.component('#appCarousel');
+// Vue.component('#carouselCon');
+// Vue.component('#carouselViewer');

@@ -422,3 +422,25 @@ var projects = new Vue({
 // Vue.component('#appCarousel');
 // Vue.component('#carouselCon');
 // Vue.component('#carouselViewer');
+
+
+
+// const buildSlideMarkup = (count) => {
+// 	let slideMarkup = '';
+//   for (var i = 1; i <= count; i++) {
+//   	slideMarkup += '<slide><span class="label">' + i + '</span></slide>'
+//   }
+//   return slideMarkup;
+// };
+
+// new Vue({
+// 	el: '#example',
+//   components: {
+//   	'carousel': VueCarousel.Carousel,
+//     'slide': VueCarousel.Slide
+//   },
+//   template: '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
+// });
+
+
+

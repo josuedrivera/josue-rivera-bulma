@@ -443,4 +443,31 @@ var projects = new Vue({
 // });
 
 
+// bulmaCarousel.attach('#post_images', {
+//     slidesToScroll: 1,
+//     slidesToShow: 1,
+//     loop: true,
+//   });
+
+
+  // CAROUSEL TEST
+
+//   const buildSlideMarkup = (count) => {
+// 	let slideMarkup = '';
+//   for (var i = 1; i <= count; i++) {
+//   	slideMarkup += '<slide><span class="label">' + i + '</span></slide>'
+//   }
+//   return slideMarkup;
+// };
+
+// new Vue({
+// 	el: '#slideshow',
+//   components: {
+//   	'carousel': VueCarousel.Carousel,
+//     'slide': VueCarousel.Slide
+//   },
+//   template: '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
+// });
+
+
 

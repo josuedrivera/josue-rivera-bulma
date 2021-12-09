@@ -493,5 +493,39 @@ var projects = new Vue({
 // }
 
 
+// FOR CAROUSEL/SLIDER 
+// FOR CAROUSEL/SLIDER 
+// FOR CAROUSEL/SLIDER 
+// FOR CAROUSEL/SLIDER 
+// import Vue from 'vue';
+// import VueCarousel from 'vue-carousel';
+// Vue.use(VueCarousel);
 
+
+// const buildSlideMarkup = (count) => {
+// 	let slideMarkup = '';
+//   for (var i = 1; i <= count; i++) {
+//   	slideMarkup += '<slide><span class="label">' + i + '</span></slide>'
+//   }
+//   return slideMarkup;
+// };
+
+// new Vue({
+// 	el: '#slideshow',
+//   components: {
+//   	'carousel': VueCarousel.Carousel,
+//     'slide': VueCarousel.Slide
+//   },
+//   template: '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
+// });
+
+
+// <carousel>
+//   <slide>
+//     Slide 1 Content
+//   </slide>
+//   <slide>
+//     Slide 2 Content
+//   </slide>
+// </carousel>
 

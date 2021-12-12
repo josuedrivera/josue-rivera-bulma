@@ -1,7 +1,17 @@
 console.log("connected");
 
+const Vue.createApp({
+  data() {
+    return {
 
-// COPY EMAIL IN CONTACT SECTION
+    };
+  }
+}).$mount('#idName');
+
+const 
+
+
+// COPY EMAIL
 function copyToClipboard(element) {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -25,14 +35,14 @@ function copyToClipboard(element) {
 //     tooltip.innerHTML = "Copy to clipboard";
 //   }
 
-
-
-
-
-
-
-
-
+const Display = {
+    template: `
+      <div class="user">
+        <h2>User {{ $route.params.id }}</h2>
+        <router-view></router-view>
+      </div>
+    `
+  }
 
 
 // VUE TRANSITION TEST 
@@ -63,6 +73,7 @@ const three = {
 		</div>
 	`
 }
+
 
 
 const headshot = {
@@ -175,10 +186,6 @@ const spaceMan = {
   `
 }
 
-
-
-
-
 const router = new VueRouter({
 	routes: [
 		{
@@ -278,6 +285,33 @@ var projects = new Vue({
 // }).$mount('#project-slides')
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Vue.component('button-counter', {
 //     data: function () {
 //       return {
@@ -303,6 +337,10 @@ var projects = new Vue({
   
 //   '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
 // });
+
+
+
+
 
 // const carouselApp = {
 // 	template: `
@@ -349,6 +387,7 @@ var projects = new Vue({
 // 	`
 // }
 
+
 // const appCarousel = new Vue({
 // 	el: '#appCarousel',
 // 	data() {
@@ -391,6 +430,7 @@ var projects = new Vue({
 //     }
 // }).$mount('#appCarousel')
 
+
 // const carouselCon = new Vue({
 // 	el: '#carouselCon',
 // 	data() {
@@ -419,9 +459,31 @@ var projects = new Vue({
 // }).$mount('#carouselViewer')
 
 
+
+
+
 // Vue.component('#appCarousel');
 // Vue.component('#carouselCon');
 // Vue.component('#carouselViewer');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -441,6 +503,36 @@ var projects = new Vue({
 //   },
 //   template: '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // bulmaCarousel.attach('#post_images', {
@@ -468,6 +560,7 @@ var projects = new Vue({
 //   },
 //   template: '<div><carousel :navigationEnabled="true">' + buildSlideMarkup(10) + '</carousel></div>'
 // });
+
 
 
 // STICKY NAVBAR
@@ -529,6 +622,7 @@ var projects = new Vue({
 //   </slide>
 // </carousel>
 
+
 var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
@@ -583,3 +677,32 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

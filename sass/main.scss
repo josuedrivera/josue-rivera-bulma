@@ -1,0 +1,400 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+@import "abstracts/animations";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/bio";
+@import "components/buttons";
+@import "components/project-gallery";
+
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
+
+
+
+
+
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Economica", sans-serif;
+// $family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+
+
+
+
+
+
+
+#container {
+    padding: 0 60px;
+  }
+  
+  .VueCarousel-slide {
+    position: relative;
+    background: #42b983;
+    color: #fff;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    min-height: 100px;
+  }
+  
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* hamburger button test */
+// .navigation {
+    /* top: 3rem;
+    right: 3rem; */
+   
+// }
+// .navigation__checkbox {
+//     display: none;
+// }
+
+// .navigation__button {
+//     background-color: teal;
+//     height: 7rem;
+//     width: 7rem;
+//     position: fixed;
+//     top: 6rem;
+//     right: 6rem;
+//     border-radius: 50%;
+//     z-index: 2000;
+//     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+//     text-align: center;
+//     cursor: pointer;
+
+    // @include respond(tab-port) {
+    //     top: 4rem;
+    //     right: 4rem;
+    // }
+
+    // @include respond(phone) {
+    //     top: 3rem;
+    //     right: 3rem;
+    // }
+// }
+
+// .navigation__background {
+//     height: 6rem;
+//     width: 6rem;
+//     border-radius: 50%;
+//     position: fixed;
+//     top: 6.5rem;
+//     right: 6.5rem;
+    /* background-image: radial-gradient($color-primary-light, $color-primary-dark); */
+    // background-image: radial-gradient(teal, aqua);
+    // z-index: 1000;
+    // transition: transform .8s cubic-bezier(.86, 0, .07, 1);
+
+    // @include respond(tab-port) {
+    //     top: 4.5rem;
+    //     right: 4.5rem;
+    // }
+
+    // @include respond(phone) {
+    //     top: 3.5rem;
+    //     right: 3.5rem;
+    // }
+// }
+
+// .navigation__nav {
+//     height: 100vh;
+//     // width: 100%;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     z-index: 1500;
+
+//     opacity: 0;
+//     width: 0;
+//     transition: all .8s cubic-bezier(.68, -.55, .265, 1.53);
+// }
+
+// .navigation__list {
+    /* create h/v center mixin out of these 4 lines and implement */
+//     position: absolute;
+//     top: 30%;
+//     left: 70%;
+//     transform: translate(-50%, -50%);
+//     list-style: none;
+//     text-align: center;
+//     width: 30%;
+// }
+
+// .navigation__item {
+//     margin: 1rem;
+// }
+
+// .navigation__link {
+    
+
+    
+// }
+// span {
+//     margin-right: 1.5rem;
+//     display: inline-block;
+// }
+
+// .navigation__link:hover,
+// .navigation__link:active {
+//     color: red;
+//     background-position: 100%;
+//     transform: translateX(1rem);
+// }
+
+// .navigation__link:link,
+// .navigation__link:visited {
+//     display: inline-block;
+//     font-size: 1.5rem;
+//     font-weight: 300;
+//     padding: 1rem 2rem;
+//     color: white;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, teal 50%);
+//     background-size: 220%;
+//     transition: all .4s;
+// }
+
+        
+//FUNCTIONALITY
+// .navigation__checkbox:checked ~ .navigation__background {
+//     transform: scale(80);
+// }
+
+// .navigation__checkbox:checked ~ .navigation__nav {
+//     width: 100%;
+//     opacity: 1;
+// }
+
+//ICON
+// .navigation__icon {
+//     position: relative;
+//     margin-top: 3.5rem;
+   
+// }
+
+// .navigation__icon,
+// .navigation__icon::before,
+// .navigation__icon::after {
+//     width: 3rem;
+//     height: 2px;
+//     background-color: aqua;
+//     display: inline-block;
+// }
+
+// .navigation__icon::before,
+// .navigation__icon::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     transition: all .2s;
+// }
+
+// .navigation__icon::before { top: -.8rem; }
+// .navigation__icon::after { top: .8rem; }
+
+// .navigation__button:hover .navigation__icon::before {
+//     top: -1rem;
+// }
+
+// .navigation__button:hover .navigation__icon::after {
+//     top: 1rem;
+// }
+
+// .navigation__checkbox:checked + .navigation__button .navigation__icon {
+//     background-color: transparent;
+// }
+
+// .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+//     top: 0;
+//     transform: rotate(135deg);
+// }
+
+// .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+//     top: 0;
+//     transform: rotate(-135deg);
+// }
+
+
+
+
+
+
+// @import url(https://fonts.googleapis.com/css?family=Lato:600);
+
+.rotating-text-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+//   height: 100vh;
+//   background: #222;
+}
+
+.rotating-text {
+//   font-family: Lato, sans-serif;
+  font-family: 'Economica', sans-serif;
+  // font-weight: 600;
+  // font-size: 3.5rem;
+  // color: white;
+  text-transform: lowercase;
+  transform: translateX(-80px);
+
+  span {
+    // display: inline-flex;
+    // margin: 0;
+    // vertical-align: top;
+
+    .word {
+      // position: absolute;
+      // display: flex;
+      opacity: 0;
+
+      .letter {
+        transform-origin: center center 25px;
+
+        &.out {
+          transform: rotateX(90deg);
+          transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+        }
+        &.in {
+          transition: 0.38s ease;
+        }
+        &.behind {
+          transform: rotateX(-90deg);
+        }
+      }
+    }
+  }
+}
+
+// palette: https://flatuicolors.com/palette/defo
+.alizarin {
+  color: #e74c3c;
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.peter-river {
+  color: #3498db;
+}
+
+.emerald {
+  color: #2ecc71;
+}
+
+.sun-flower {
+  color: #f1c40f;
+}
+
+  
+
+// #projectPhoto {
+//   height: 50vh;
+//   width: 50vw;
+// }
+
+
+
+// STYLING AND TRANSITION ANIMATION FOR PROJECT SLIDES 
+// html {
+// 	height: 100%;
+//   }
+  
+//   body {
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100%;
+//   }
+
+// ul {
+// 	text-align: center;
+// 	list-style-type: none;
+// 	padding: 0;
+// }
+// ul li {
+// 	display: inline-block;
+// 	margin: 10px;
+// }
+// img {
+// 	max-height: 300px;
+// }
+// #content {
+// 	flex: 1;
+// 	padding: 20px;
+// }
+// .slide-fade-enter {
+// 	transform: translateX(-40px);
+// 	opacity: 0;
+// }
+// .slide-fade-leave-to {
+// 	transform: translateX(40px);
+// 	opacity: 0;
+// }
+// .slide-fade-enter-active {
+// 	transition: 0.5s ease;
+// }
+// .slide-fade-leave-active {
+// 	transition: 0.3s ease;
+// }
+
+
+  
+//   #footer {
+// 	padding: 0;
+// 	margin: 0;
+//   }

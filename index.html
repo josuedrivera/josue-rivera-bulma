@@ -6,25 +6,24 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
 		<title>Sway says "Hi!"</title>
+
 	<!-- favicon -->
 	<link rel="shortcut icon" href="favicon.png">
 
-	<!-- update fonts -->
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">	
+
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> -->
 
 	<!-- probably delete -->
 		<!-- FontAwesome -->
 		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
 
-		<!-- link to css reset -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-
-		<!-- link to animate css file -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
-
-		<!-- Bootstrap -->
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<!-- link to animate css file -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	
 	<!-- Bulma -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -34,420 +33,1982 @@
 
 </head>
 
-<body>	
-<!-- WELCOME SECTION	 -->
-	<section id="welcome" class="hero is-fullheight has-text-centered">
-		<div class="hero-head">
-			<!-- <header class="navbar"> -->
-			<nav class="navbar" role="navigation" aria-label="main navigation">
-				<div class="container">
-					<div class="navbar-brand">	
-			<!-- brand here -->
-						<a class="navbar-item" href="#welcome">
-							<!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-							 <span class="has-text-primary has-text-weight-bold">JOSUE RIVERA</span> 
-						</a>
-						<!-- <a class="navbar-item" href="">
-							<i class="fab fa-grav"></i>
-						</a> -->
-			<!-- hambuger button -->
-						<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
-						</a>
-						<!-- <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-							<span></span>
-							<span></span>
-							<span></span>
-						</span> -->
-					</div>
-			<!-- navbar items -->
-					<!-- <div id="navbarMenuHeroC" class="navbar-menu">
-						<div class="navbar-end">
-							<a class="navbar-item is-active">
-							Home
-							</a>
-							<a class="navbar-item">
-							Examples
-							</a>
-							<a class="navbar-item">
-							Documentation
-							</a>
-							<span class="navbar-item">
-								<a class="button is-success is-inverted">
-									<span class="icon">
-										<i class="fab fa-github"></i>
-									</span>
-									<span>Download</span>
-								</a>
-							</span>
-						</div>
-					</div> -->
+<body id="app">	
+<!-- BURGER AND NAVIGATION	 -->
+	<div class="navigation">	
+		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+		<label for="navi-toggle" class="navigation__button">
+			<span class="navigation__icon">&nbsp;</span>
+		</label>
 
-					<div id="navbarBasicExample" class="navbar-menu">
-						<div class="navbar-end">
-							<a class="navbar-item" href="#about-me">About Me</a>
+		<div class="navigation__background">&nbsp;</div>
 
-							<div class="navbar-item has-dropdown is-hoverable">
-								<a class="navbar-link">
-								My Projects
-								</a>
-						
-								<div class="navbar-dropdown">
-									<a class="navbar-item" href="#projects">
-										Gallery
-									</a>
-									<hr class="navbar-divider">
-									<a class="navbar-item">
-									Digital Drumkt
-									</a>
-									<a class="navbar-item">
-									Faithful Quiz
-									</a>
-									<a class="navbar-item">
-									Pusheen Zodiac
-									</a>
-								</div>
-							</div>
-
-							<a class="navbar-item" href="#footer">Contact Info</a>
-	
-							<span class="navbar-item">
-								<a class="button is-primary is-inverted">
-									<span class="icon">
-										<i class="fas fa-arrow-circle-down"></i>
-									</span>
-									<span>My Resume</span>
-								</a>
-							</span>
-
-					<!-- <div class="navbar-end">
-						<div class="navbar-item">
-							<div class="buttons">
-								<a class="button is-primary">
-									<strong>Share</strong>
-								</a>
-								<a class="button is-light">
-								Log in
-								</a>
-							</div>
-						</div>
-					</div> -->
-					</div>
-				</div>
-			</nav>
-		</div>
-
-		<div id="welcome-hero" class="hero-body">
-			<div id="welcome-hero-container" class="container">
-				<h1 class="title is-size-1 has-text-white">
-				Hi, my name is Josue.
-				</h1>
-				<h2 class="subtitle is-size-3 has-text-white">
-				Web Deverloper from the San Francisco Bay Area.<i class="fas fa-angle-down welcome-down"></i>
-				</h2>
-			</div>
-		</div>
-	</section>
-<!-- NAVBAR	 -->
-	<!-- old nav -->
-		<!-- <nav class="navbar is-dark has-text-white is-fixed" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand"> 
-			<a class="navbar-item" href="#">
-				<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-				<i class="fab fa-grav"></i> JOSUE RIVERA
-			</a>
-			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</a>
-			</div>
-			<div id="navbarBasicExample" class="navbar-menu">
-			<div class="navbar-end">
-				<a class="navbar-item">
-				Home
-				</a>
-		
-				<a class="navbar-item">
-				About
-				</a>
-		
-				<div class="navbar-item has-dropdown is-hoverable">
-				<a class="navbar-link">
-					Projects
-				</a>
-		
-				<div class="navbar-dropdown">
-					<a class="navbar-item">
-					Digital Drumkt
-					</a>
-					<a class="navbar-item">
-					Faithful Quiz
-					</a>
-					<a class="navbar-item">
-					Pusheen Zodiac
-					</a>
-					<hr class="navbar-divider">
-					<a class="navbar-item">
-					Report an issue
-					</a>
-				</div>
-				</div>
-				<div class="navbar-end">
-					<div class="navbar-item">
-						<div class="buttons">
-						<a class="button is-primary">
-							<strong>Share</strong>
-						</a>
-						<a class="button is-light">
-							Log in
-						</a>
-						</div>
-					</div>
-					</div>
-			</div>
-			</div>
-		</nav> -->
-
-	<div class="">
-		<!-- <header class="navbar"> -->
-		<nav class="navbar is-dark has-text-white is-fixed" role="navigation" aria-label="main navigation">
-		<!-- <nav class="navbar" role="navigation" aria-label="main navigation"> -->
-			<div class="container">
-				<div class="navbar-brand">	
-			<!-- brand here -->
-					<a class="navbar-item" href="#welcome">
-					<!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-						<span class="has-text-white has-text-weight-bold">JOSUE RIVERA</span> 
-					</a>
-					<!-- <a class="navbar-item" href="">
-						<i class="fab fa-grav"></i>
-					</a> -->
-					<!-- hambuger button -->
-					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-						<span aria-hidden="true"></span>
-					</a>
-					<!-- <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span> -->
-				</div>
-			<!-- navbar items -->
-				<!-- <div id="navbarMenuHeroC" class="navbar-menu">
-					<div class="navbar-end">
-						<a class="navbar-item is-active">
-						Home
-						</a>
-						<a class="navbar-item">
-						Examples
-						</a>
-						<a class="navbar-item">
-						Documentation
-						</a>
-						<span class="navbar-item">
-							<a class="button is-success is-inverted">
-								<span class="icon">
-									<i class="fab fa-github"></i>
-								</span>
-								<span>Download</span>
-							</a>
-						</span>
-					</div>
-				</div> -->
-
-				<div id="navbarBasicExample" class="navbar-menu">
-					<div class="navbar-end">
-						<a class="navbar-item" href="#about-me">About Me</a>
-
-						<div class="navbar-item has-dropdown is-hoverable">
-							<a class="navbar-link">
-							My Projects
-							</a>
-					
-							<div class="navbar-dropdown">
-								<a class="navbar-item" href="#projects">
-									Gallery
-								</a>
-								<hr class="navbar-divider">
-								<a class="navbar-item">
-								Digital Drumkt
-								</a>
-								<a class="navbar-item">
-								Faithful Quiz
-								</a>
-								<a class="navbar-item">
-								Pusheen Zodiac
-								</a>
-							</div>
-						</div>
-
-						<a class="navbar-item" href="#footer">Contact Info</a>
-
-						<span class="navbar-item">
-							<a class="button is-primary">
-								<span class="icon">
-									<i class="fas fa-arrow-circle-down"></i>
-								</span>
-								<span>My Resume</span>
-							</a>
-						</span>
-
-						<!-- <div class="navbar-end">
-							<div class="navbar-item">
-								<div class="buttons">
-									<a class="button is-primary">
-										<strong>Share</strong>
-									</a>
-									<a class="button is-light">
-									Log in
-									</a>
-								</div>
-							</div>
-						</div> -->
-					</div>
-				</div>
-			</div>
+		<nav class="navigation__nav">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#about-me" class="navigation__link">
+						<span>01</span> About Me </a>
+				</li>
+				<li class="navigation__item">
+					<a href="#project-gallery" class="navigation__link">
+						<span>02</span>	Project Gallery </a>
+				</li>
+			
+				<li class="navigation__item">
+					<a href="#contact-info" class="navigation__link">
+						<span>03</span>	Contact Info </a>
+				</li>
+			</ul>
 		</nav>
+	<!-- closes navigaton div 	 -->
 	</div>
 
 
+<!-- LANDING PAGE SECTION -->
+	<section id="welcome" class="hero is-fullheight has-text-centered">
+	<!-- BACKGROUND VIDEO -->
+		<div class="bg-video">
+			<video class="bg-video__content" autoplay muted loop>
+				<source src="img/video.mp4" type="video/mp4">
+				<!-- <source src="img/video.webm" type="video/webm"> -->
+				Your browser is not supported!
+			</video>
+		</div>
+	<!-- LANDING PAGE CONTENT -->
+		<div id="welcome-hero" class="hero-body">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ABOUT ME SECTION -->
-	<section id="about-me" class="section has-background-primary has-text-centered">
-		<div class="hero is-fullheight has-background-link">
-			<figure class="image">
-				<img id="headshot" class="is-rounded" src="img/headshotsm.jpg">
-			</figure>
-			<div class="container has-background-white-ter">
-				<h3 class="title">	Josue Rivera  </h3>
-				<p class="subtitle">
-					Front-End Developer | Creative Professional
-				</p>
-				<div>
-					<!-- <a class="button is-primary">
-						Button
-					  </a> -->
-					  <!-- <a class="button is-link">
-						Button
-					  </a> -->
-					  <!-- <a class="button is-info">
-						Button
-					  </a> -->
-					  <!-- <a class="button is-success">
-						Button
-					  </a> -->
-					  <!-- <a class="button is-warning">
-						Button
-					  </a> -->
-					  <!-- <a class="button is-danger">
-						Button
-					  </a> -->
-					  <a class="button is-danger">
-						About Me
-					  </a>
-					  <a class="button is-danger">
-						Hard Skills
-					  </a>
-					  <a class="button is-danger">
-						Soft Skills
-					  </a>
+			<!-- <p class=""> -->
+				
+				<!-- <span>&#x1F433</span> -->
+				<figure class="hero-head image has-background-info-dark p-1 logoTest">
+					<img class="is-rounded" src="./img/swaysauce_pfp.jpeg" alt="">
+				</figure>
+			
+			<!-- </p> -->
+				
+			
+			<div id="welcome-hero-container" class="container"> 
+				<h1 id="" class=" has-text-info testType p-0">
+					Josue Rivera</h1>
+				<!-- <div class="titleBar columns column is-6 is-offset-3 p-0"></div>
+				<h2 class=" has-text-black testTypeII">
+					Web Deverloper | San Francisco Bay Area.
+				</h2> -->
+				<div class="titleBar is-flex is-align-items-flex-end is-centered has-background-danger columns column is-6 is-offset-3 p-0">
+					<!-- <p class="is-align-self-flex-start is-size-3 pt-3">&#9786;</p> -->
+					<h2 class="has-text-black testTypeII">
+						Web Developer | San Francisco Bay Area.
+					</h2>
 				</div>
-				<div class="container has-background-warning">
-					<p>select a window to expand</p>
-				</div>
+
+				
+					<a href="#about-me"><i class="fas fa-angle-down welcome-down is-size-1 has-text-black"></i></a>
+				
+			
+
+				<!-- <h1 id="" class="title is-size-1 has-text-primary-dark testType">
+					Hi, my name is 
+					Josue Rivera
+				</h1>
+		
+				<hr class="hero-bar">
+				
+				<h2 class="subtitle is-size-3 has-text-primary-dark">
+				Web Deverloper | San Francisco Bay Area.
+				<i class="fas fa-angle-down welcome-down"></i>
+				</h2> -->
 			</div>
 		</div>
+		
+		<!-- <div class="hero-foot has-text-primary-dark">
+			<div class="m-0">
+				<a href="#about-me"><i class="fas fa-angle-down welcome-down is-size-1 has-text-primary"></i></a>
+			</div>
+		</div> -->
 	</section>
+
+
+				
+
+<!-- ABOUT ME SECTION -->	
+	<section id="about-me" class="section hero is-fullheight has-background-black-ter pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column m-0 p-0 has-background-black-ter">
+				<h2 class="title is-size-1 has-text-primary-dark">ABOUT ME</h2>
+			</div>
+		</div>
+
+		<div class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-primary-dark is-10">
+				<div class="tile box has-background-black p-3">
+					<div class="tile is-parent is-vertical is-4 has-text-centered p-0">
+						<article class="tile is-child is-flex m-0 p-0 has-background-success">	
+							<div class="is-flex is-flex-direction-column is-justify-content-space-between has-background-primary">
+						<!-- headshot -->
+								<figure class="image has-background-primary p-4">
+									<img id="headshot" class="is-rounded p-0" src="img/headshotsm.jpg">
+								</figure>
+						<!-- name and title -->
+								<div class="box has-background-danger mx-4 py-2">
+									<h1 class="title has-text-white"> Josue Rivera </h1>
+									<h2 class="subtitle has-text-black">
+										Front-End Developer 
+										<!-- | Creative Professional -->
+									</h2>
+									
+								</div>	
+
+								<div class="container">
+									<span class="is-size-3 has-text-white">
+										<!-- <i class="fas fa-map-pin"></i> -->
+										<i class="fas fa-map-marker-alt has-text-danger-dark"></i> San Mateo
+									</span>
+								</div>
+								<div class="container">
+									<p class="block has-text-primary-dark has-text-centered is-size-5">  check out my --blog in progress--
+									</p>
+								</div>
+
+
+						<!-- test paragraph -->
+								<div class="p-4">
+									<div class="box is-size-5 has-background-grey-darker p-0">
+										<a href="#project-gallery"> 
+											<span class="is-block is-size-4 has-text-danger p-0">
+												<i class="fas fa-angle-down welcome-down p-0 m-0"></i>	CHECK OUT MY WORK</span>
+										</a>
+									</div>
+								</div>
+							<!-- closes bio column -->
+							</div>
+						</article>
+						
+					</div>
+					<div class="tile is-vertical has-background-primary p-4">
+
+						<div class="is-12 is-flex is-flex-direction-column has-background-info">
+
+							<!-- vue router -->
+							<div id="about-me" class="">
+								<div class="has-background-warning">
+									<transition mode="out-in" name="bounce">
+										<router-view></router-view>
+									</transition>
+								</div>
+							</div>  
+
+						</div>
+						<div class="tile is-parent has-background-grey-darker p-0">
+							<article class="tile is-child is-flex is-align-self-flex-end">
+								<div class="column is-flex is-align-content-flex-end is-justify-content-flex-end p-0 m-0">
+								<!-- buttons  -->
+									<div class="buttons has-addons">
+										<router-link 
+										class="button is-danger" 
+										to="/aboutMe">
+										About Me</router-link>
+					
+										<router-link 
+										class="button is-danger" 
+										to="/hardSkills">
+										Hard Skills</router-link>
+					
+										<router-link 
+										class="button is-danger" 
+										to="/softSkills">
+										Soft Skills</router-link>
+					
+										<router-link 
+										class="button is-inverted is-danger" 
+										to="/spaceMan">
+											<i class="fas fa-lg fa-user-astronaut"></i>
+										</router-link>	
+									</div> 
+							<!-- closes column div  -->
+								</div>
+							</article>
+						</div>							
+					</div>								
+				</div>
+			</div>
+	<!-- closes container div  -->
+		</div>		
+	</section>
+
+
+<!-- BLOG SECTION -- for future deployment -->	
+	<!-- <section id="my-blog" class="section hero is-fullheight has-background-black-bis pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column m-0 p-0 has-background-black-bis">
+				<h2 class="title is-size-1 has-text-danger is-block">
+					MY BLOG
+					<span class="subtitle is-size-4 has-text-grey-light is-block">
+					What I've Learned from Kids & Kittens</span>
+				</h2>
+			</div>
+		</div>
+
+		<div class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-danger is-10">
+				<div class="tile box has-background-black p-3">
+					<div class="tile is-parent is-vertical is-4 has-text-centered p-0">
+						<article class="tile is-child is-flex m-0 p-0 has-background-success">	
+							<div class="is-flex is-flex-direction-column is-justify-content-space-between has-background-primary">
+						headshot
+								
+							</div>
+						</article>
+						
+					</div>
+					<div class="tile is-vertical has-background-primary p-4">
+
+						<div class="is-12 is-flex is-flex-direction-column has-background-info">
+
+						</div>
+						<div class="tile is-parent has-background-grey-darker p-0">
+							<article class="tile is-child is-flex is-align-self-flex-end">
+								<div class="column is-flex is-align-content-flex-end is-justify-content-flex-end p-0 m-0">
+								buttons 
+								
+									
+								</div>
+							</article>
+						</div>							
+					</div>								
+				</div>
+			</div>
+		</div>		
+	</section> -->
+
+
+
+<!-- PROJECTS SECTION -->	
+	<section id="project-gallery" class="section hero is-fullheight has-background-grey-darker pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column has-background-grey-darker is-flex is-justify-content-flex-end m-0 p-0">
+				<h2 class="title is-size-1 has-text-grey-light">MY PROJECTS</h2>
+			</div>
+		</div>	
+
+			
+		<div id="project-slides" class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-grey-light is-10">
+				<div class="tile is-vertical box has-background-black p-3">
+
+					<div class="card p-0">
+						<div class="card-content has-background-primary">
+
+							<div class="tile has-background-black-bis">
+								<div class="tile is-parent is-vertical p-0">
+									<article class="tile is-child p-0">
+
+										<div class="tile is-vertical p-0">
+											
+										<!-- vue router -->
+											<div id="" class="has-background-black-bis">
+												<div class="">
+													<!-- <transition mode="out-in" name="bounce">
+														<router-viewer></router-viewer>
+													</transition> -->
+													
+													<transition mode="out-in" name="moveInLeft" class="">
+														<router-view class=""></router-view>
+													</transition>	
+													<!-- list of projects available  -->
+														
+												</div>
+											</div>  
+											
+										</div>
+									</article>
+								</div>
+
+								<div class="tile is-parent is-3 has-text-centered p-0">
+									<article class="tile is-child has-background-primary m-0 is-size-4 is-flex is-justify-content-flex-end is-align-items-center">
+										
+										<!-- MY PROJECTS: LIST  -->
+										<ul class="px-4">
+											<li class="">
+												<router-link to="/one" class="has-text-primary-dark">Digital Drumkit</router-link>
+											</li>
+											<li class="">
+												<router-link to="/two" class="has-text-primary-dark">Pusheen Zodiac</router-link>
+											</li>
+											<li class="">
+												<router-link to="/three" class="has-text-primary-dark">Natours</router-link>
+											</li>
+											<li class="">
+												<router-link to="/four" class="has-text-primary-dark">Color Guess</router-link>
+											</li>
+											<li class="">
+												<router-link to="/five" class="has-text-primary-dark">Monster Attack</router-link>
+											</li>
+											<li class="">
+												<router-link to="/six" class="has-text-primary-dark">To Do App</router-link>
+											</li>
+											<li class="">
+												<router-link to="/seven" class="has-text-primary-dark">Score Keeper</router-link>
+											</li>
+											<li class="">
+												<router-link to="/eight" class="has-text-primary-dark">Roast Sway</router-link>
+											</li>
+											<li class="">
+												<router-link to="/nine" class="has-text-primary-dark">Villains</router-link>
+											</li>
+											<li class="">
+												<router-link to="/ten" class="has-text-primary-dark">U-Host</router-link>
+											</li>
+											<li class="">
+												<router-link to="/eleven" class="has-text-primary-dark">Patatap Clone</router-link>
+											</li>
+											<li class="">
+												<router-link to="/twelve" class="has-text-primary-dark">Aurora Grove</router-link>
+											</li>
+											<li class="">
+												<router-link to="/thirteen" class="has-text-primary-dark">Bulma Portfolio</router-link>
+											</li>
+											<li class="">
+												<router-link to="/fourteen" class="has-text-primary-dark">Faithful Quiz</router-link>
+											</li>
+											<li class="">
+												<router-link to="/fifteen" class="has-text-primary-dark">Faithful Quiz</router-link>
+											</li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						
+						</div>
+
+						<footer class="card-footer has-background-danger is-flex is-justify-content-center">
+							
+							<h3 id="">
+								<a href="#contact-info" class="is-size-4 has-text-white">
+									<i class="fas fa-angle-down welcome-down"></i>
+									<span> Sway says 'Hi!' | KEEP UP AND STAY IN TOUCH </span> 
+									<i class="fas fa-angle-down welcome-down"></i>
+								</a>
+							</h3>
+									
+						</footer>
+					</div>											
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	
+
+
+
+
+<!-- CONTACT/FOOTER SECTION -->
+	<section id="contact-info" class="hero is-fullheight has-background-black-ter pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column m-0 p-0 has-background-black-ter">
+				<h2 class="title is-size-1 has-text-warning">CONTACT INFO</h2>
+			</div>
+		</div>
+		
+		
+
+		<!-- ROTATING TEXT THINGY MAGGIJER -->
+		<div id="" class="card has-background-danger">
+				<div id="" class="card-header has-text-white">
+					
+					<!-- <div class="columns column m-0 p-6  has-background-black-ter rotating-text-box">
+						ROTATING TEXT
+						<div class="rotating-text  has-background-black-ter p-6">
+							STATIC BOX
+							<div class=" is-inline-block">
+								<h2 class="title is-size-1 has-text-warning">SOME OF MY FAVORITE THINGS:</h2>
+							</div>
+							DYNAMIC BOX
+							<div class="columns is-inline-block">
+								<p class="column is-half">
+									
+									<span class="word alizarin">tacos.</span>
+									<span class="word wisteria">football.</span>
+									<span class="word peter-river">napping.</span>
+									<span class="word emerald">hanging_out.</span>
+									<span class="word sun-flower">free_stuff.</span>
+								</p>
+							</div>
+						</div>
+					</div> -->
+					
+				</div>
+				
+
+			
+		
+			<!-- CONTACT INFO AND MORE AREA  -->
+			<div class="card-content container columns is-centered has-background-danger my-0 pb-0">
+
+
+				<div class=" column columns is-11 px-5">
+					<div class="tile is-vertical">
+
+
+						<!-- EMAIL C/P  -->
+						<div id="email-div" class=" ">
+							<div class="is-size-1 has-text-warning">
+								<i class="fas fa-paper-plane"></i>
+								E-MAIL:	
+							</div>
+							<span class="tooltip has-text-warning">
+								<span onclick="copyToClipboard('#myemail')" onmouseout="outFunc()">
+									<span class="subtitle has-text-white" id="myemail">
+										jdemarrivera@gmail.com 
+									</span>
+									<i class="fas fa-copy has-text-white"></i>
+									<span class="tooltiptext has-background-black has-text-warning" id="myTooltip">Copy to clipboard</span>
+								</span>
+							</span>
+						</div>
+		
+		
+						
+						<!-- SOCIAL MEDIA TEXT  AND LINKS
+						<div id="social-div" class="has-text-primary has-text-right">
+							
+							SOCIAL MEDIA TEXT 
+							<div class="has-background-info ">
+								<p class="subtitle has-text-warning is-flex is-justify-content-flex-end">
+									Check out my: 
+								</p>
+								<p class="title has-text-black is-flex is-justify-content-flex-end">
+									SOCIAL MEDIA
+								</p>
+							</div>
+		
+							SOCIAL MEDIA ICON LIST 
+							<div class="has-background-success ">
+								<a
+								href="https://www.linkedin.com/in/josuedrivera/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-linkedin"></i> 
+									LinkedIn
+								</a>
+				
+								<a
+								href="https://github.com/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-github"></i>
+									GitHub
+								</a>
+								
+								<a id="profile-link" 
+								href="https://codepen.io/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-codepen"></i>
+									CodePen
+								</a>
+				
+								<a id="profile-link" 
+								href="https://www.freecodecamp.org/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-free-code-camp"></i>
+									FreeCodeCamp
+								</a>
+				
+								<a
+								href="https://www.instagram.com/swaysauce/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-instagram"></i> 
+									Instagram
+								</a>
+				
+								<a
+								href="https://www.facebook.com/worldgoneswayzee/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-facebook-square"></i> 
+								Facebook
+								</a>				
+							</div>
+						</div> -->
+		
+		
+						<!-- CREDITS BAR  -->
+						<div id="credits-div" class="  pt-6">
+							<p class="">
+							</p> 
+							<p class="block is-flex is-align-content-center">
+								<div class="pr-4">
+									<a href="https://bulma.io" class="">
+										<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+									</a>
+								</div>
+								
+								
+								<div class="">
+									Video by: 
+									<a href="https://instagram.com/freecreativestuff" class=" pl-3">
+										<i class="fab fa-instagram"></i> Free Creative Stuff
+									</a>
+									via 
+									<a href="https://www.pexels.com/">Pexels.com</a>
+								</div>
+
+
+								<div class="is-size-5">
+									<span class="">
+										This website was made using: 
+									</span>
+									
+									<span class="px-1">
+										<i class="fab fa-html5" class="is-size-1"></i>
+									</span>
+									<span class="px-1">
+										<i class="fab fa-css3-alt"></i>
+									</span>
+									<span class="px-1">
+										<i class="fab fa-js-square"></i>
+									</span>
+									<span class="px-1">
+										<i class="fab fa-vuejs"></i>
+									</span>
+									<span class="px-1">
+										<i class="fab fa-node-js"></i>
+									</span>
+									
+								</div>
+
+							</p>
+						</div>
+			
+							
+					</div>
+
+					<!-- <div class=""> -->
+
+						<!-- SOCIAL MEDIA TEXT  AND LINKS-->
+						<div id="" class="tile is-vertical has-text-right  is-flex is-justify-content-flex-end">
+							<!-- <span>
+								back to top
+								<i class="far fa-caret-square-up"></i>
+							</span>
+							<span>
+								back to top
+								<i class="fas fa-caret-up"></i>
+							</span>
+							<span>
+								back to top
+								<i class="fas fa-chevron-circle-up"></i>
+							</span> -->
+							<span class="">
+								<a href="#welcome">
+
+									back to top
+									<i class="fas fa-chevron-up"></i>
+								</a>
+							</span>
+							
+							<!-- SOCIAL MEDIA TEXT  -->		
+							<div class="pb-4 pt-6">
+								<p class="subtitle is-size-4 has-text-warning is-flex is-justify-content-flex-end">
+									CHECK OUT MY 
+								</p>
+								<p class="title is-size-2 has-text-white is-flex is-justify-content-flex-end">
+									SOCIAL MEDIA
+								</p>
+							</div>
+		
+							<!-- SOCIAL MEDIA ICON LIST  -->
+							<div class=" column columns is-10 is-offset-2 py-5 is-flex is-justify-content-space-between is-align-self-flex-end">
+								<a
+								href="https://www.linkedin.com/in/josuedrivera/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-linkedin"></i> 
+									<!-- LinkedIn -->
+								</a>
+				
+								<a
+								href="https://github.com/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-github"></i>
+									<!-- GitHub -->
+								</a>
+								
+								<a id="profile-link" 
+								href="https://codepen.io/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-codepen"></i>
+									<!-- CodePen -->
+								</a>
+				
+								<a id="profile-link" 
+								href="https://www.freecodecamp.org/josuedrivera"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-free-code-camp"></i>
+									<!-- FreeCodeCamp -->
+								</a>
+				
+								<a
+								href="https://www.instagram.com/swaysauce/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-instagram"></i> 
+									<!-- Instagram -->
+								</a>
+				
+								<a
+								href="https://www.facebook.com/worldgoneswayzee/"
+								target="_blank"
+								class="btn contact-details">
+								<i class="icon is-large fas fa-3x fab fa-facebook-square"></i> 
+								<!-- Facebook -->
+								</a>				
+							</div>
+						</div>
+		
+						<!-- <div class="columns column m-0 p-6  has-background-black-ter rotating-text-box">
+						ROTATING TEXT
+						<div class="rotating-text  has-background-black-ter p-6">
+							STATIC BOX
+							<div class=" is-inline-block">
+								<h2 class="title is-size-1 has-text-warning">SOME OF MY FAVORITE THINGS:</h2>
+							</div>
+							DYNAMIC BOX
+							<div class="columns is-inline-block">
+								<p class="column is-half">
+									
+									
+								</p>
+							</div>
+						</div>
+					</div> -->
+					
+			
+							
+					<!-- </div> -->
+				</div>
+				
+		<!-- <div class="card p-0">
+									<div class="card-content has-background-primary">
+			
+										<div class="tile">
+											<div class="tile is-parent is-vertical p-0">
+												<article class="tile is-child p-0">
+			
+													<div class="tile is-vertical p-0">
+														
+														
+													</div>
+												</article>
+											</div>
+			
+											<div class="tile is-parent is-3 has-text-centered p-0">
+												<article class="tile is-child has-background-primary is-size-4 is-flex is-justify-content-flex-end is-align-items-center">
+													
+					
+												</article>
+											</div>
+										</div>
+									
+									</div>
+			
+									
+								</div>											 -->
+
+
+
+
+					
+
+
+
+
+
+			</div>
+		<!-- FOOTER W/COPYRIGHT AND YEAR  -->
+			<footer class="card-footer has-background-black">
+				<p class="card-footer-item">
+					<span class="is-size-4">
+						<!-- <span class="">
+							This website was made using: 
+						</span>
+						
+						<span class="px-1">
+							<i class="fab fa-html5" class="is-size-1"></i>
+						</span>
+						<span class="px-1">
+							<i class="fab fa-css3-alt"></i>
+						</span>
+						<span class="px-1">
+							<i class="fab fa-js-square"></i>
+						</span>
+						<span class="px-1">
+							<i class="fab fa-vuejs"></i>
+						</span> -->
+						
+						<span class="pl-6"> 
+							<i class="far fa-copyright"></i>  
+							Josue Rivera 2020
+						</span>
+					</span>
+				</p>
+				
+			</footer>
+		</div>
+	</section>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <div id="" class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-info is-10">
+				<div class="tile is-vertical box has-background-black p-3">
+
+					<div class="card p-0">
+						<div class="card-content has-background-primary">
+
+							<div class="tile">
+								<div class="tile is-parent is-vertical p-0">
+									<article class="tile is-child p-0">
+
+										<div id="" class="has-text-center has-text-info">
+											<div class="columns column m-0 p-0 has-background-black-bis rotating-text-box">
+											ROTATING TEXT
+												<div class="rotating-text has-background-black-bis p-3">
+													STATIC BOX
+													<div class="has-background-black-bis is-inline-block">
+														<h2 class="title is-size-1 has-text-warning">CONTACT INFO</h2>
+													</div>
+													DYNAMIC BOX
+													<div class="box as-background-info is-inline-block">
+														<p class=" has-background-warning has-text-warning">
+															1234567890
+															<span class="word alizarin">tacos.</span>
+															<span class="word wisteria">football.</span>
+															<span class="word peter-river">napping.</span>
+															<span class="word emerald">hanging_out.</span>
+															<span class="word sun-flower">free_stuff.</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTACT FOOTER SECTION ROUGH  -->
+		<!-- <footer class="hero is-halfheight has-background-black pt-2">
+			<div class="columns column is-8 is-offset-2 my-0">
+				<div class="columns column has-background-grey-dark is-flex is-justify-content-flex-end m-0 p-0">
+					<h2 class="title is-size-1 has-text-danger">SOCIAL MEDIA</h2>
+				</div>
+			</div>
+
+			<div id="copyright">
+				
+				<p><i class="far fa-copyright"></i>  Josue Rivera 2020</p>
+				<div id="email-div" class="is-pulled-left">
+					<div class="title has-text-primary">&#x1F48C; Email Me:	</div>
+					<span class="subtitle has-text-white" id="myemail">jdemarrivera@gmail.com </span>
+					<span class="tooltip">
+						<span onclick="copyToClipboard('#myemail')" onmouseout="outFunc()">
+							<i class="fas fa-copy"></i>
+							<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+						</span>
+					</span>
+				</div>
+			</div>
+
+			<div id="social-div" class="has-text-primary has-text-right">
+
+				<p class="subtitle has-text-white">Check me out on social media </p>
+				<div class="">
+					<a
+					href="https://www.linkedin.com/in/josuedrivera/"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-linkedin"></i> 
+						LinkedIn
+					</a>
+
+					<a
+					href="https://github.com/josuedrivera"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-github"></i>
+						GitHub
+					</a>
+					
+					<a id="profile-link" 
+					href="https://codepen.io/josuedrivera"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-codepen"></i>
+						CodePen
+					</a>
+
+					<a id="profile-link" 
+					href="https://www.freecodecamp.org/josuedrivera"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-free-code-camp"></i>
+						FreeCodeCamp
+					</a>
+
+					<a
+					href="https://www.instagram.com/swaysauce/"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-instagram"></i> 
+						Instagram
+					</a>
+
+					<a
+					href="https://www.facebook.com/worldgoneswayzee/"
+					target="_blank"
+					class="btn contact-details">
+					<i class="icon is-large fas fa-3x fab fa-facebook-square"></i> 
+					Facebook
+				</a>				
+			</div>
+		</div>
+		
+		<div id="bulma">
+			<a href="https://bulma.io" class="is-pulled-right">
+				<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+			</a>
+		</div>
+	</footer> -->
+
+
+<!-- ABOUT ME SECTION  TEST VERSION -->	
+	<!-- <section id="project-gallery" class="section hero is-fullheight has-background-grey pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column has-background-grey-dark is-flex is-justify-content-flex-end m-0 p-0">
+				<h2 class="title is-size-1 has-text-info">MY PROJECTS</h2>
+			</div>
+		</div>	 -->
+
+			
+		<!-- <div id="projectSlides" class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-info is-10">
+				<div class="tile box has-background-black p-3">
+
+					<div class="tile is-vertical has-background-primary py-4 pl-4">
+						<div class="box has-background-grey-darker">
+							
+							<transition mode="out-in" name="slide-fade" class="">
+								<router-view class=""></router-view>
+							</transition>	
+						</div>
+					</div>
+
+					<div class="tile is-parent is-vertical has-text-centered p-0">
+						<article class="tile is-child has-background-primary p-4">	
+							<div class="box has-background-grey-dark">
+								<ul class="">
+									<li class="">
+										<router-link to="/one">Digital Drumkit</router-link>
+									</li>
+									<li class="">
+										<router-link to="/two">Pusheen Zodiac</router-link>
+									</li>
+									<li class="">
+										<router-link to="/three">Natours</router-link>
+									</li>
+									<li class="">
+										<router-link to="/one">Color Guess</router-link>
+									</li>
+									<li class="">
+										<router-link to="/two">Monster Attack</router-link>
+									</li>
+									<li class="">
+										<router-link to="/three">To Do App</router-link>
+									</li>
+									<li class="">
+										<router-link to="/one">Score Keeper</router-link>
+									</li>
+									<li class="">
+										<router-link to="/two">Roast Sway</router-link>
+									</li>
+									<li class="">
+										<router-link to="/three">Villains</router-link>
+									</li>
+									<li class="">
+										<router-link to="/one">U-Host</router-link>
+									</li>
+									<li class="">
+										<router-link to="/two">Patatap Clone</router-link>
+									</li>
+									<li class="">
+										<router-link to="/two">Aurora Grove</router-link>
+									</li>
+									<li class="">
+										<router-link to="/three">Faithful Quiz</router-link>
+									</li>
+								</ul>
+							</div>
+						</article>
+						
+					</div> -->
+
+					
+					<!-- <div class="tile is-parent is-vertical is-4 has-text-centered p-0">
+						<article class="tile is-child is-flex m-0 p-0 has-background-success">	
+							<div class="has-background-primary">
+							</div>
+							<div class="tile is-vertical has-background-primary p-4">
+							</div>
+						</article>
+					</div> -->
+				<!-- </div>
+
+			</div>
+		</div>		
+	</section> -->
+
+
+
+
+<!-- PROJECTS SECTION ROUGH VERSION -->
+	<!-- <section id="project-gallery" class="section hero is-fullheight has-background-grey-darker px-0 pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column has-background-grey-darker is-flex is-justify-content-flex-end m-0 p-0">
+				<h2 class="title is-size-1 has-text-info">MY PROJECTS</h2>
+			</div>
+		</div>
+
+
+	<section id="projectSlides" class="section hero is-fullheight has-background-black-ter pt-2">
+		<div class="columns column is-8 is-offset-2 my-0">
+			<div class="columns column m-0 p-0 has-background-black-ter">
+				<h2 class="title is-size-1 has-text-warning">MY PROJECTS</h2>
+			</div>
+		</div>
+
+		<div class="container columns is-centered py-4">
+			<div class="tile is-ancestor box column columns has-background-danger is-10">
+				<div class="tile box has-background-black p-3">
+					<div class="tile is-parent is-vertical is-4 has-text-centered p-0">
+						<article class="tile is-child is-flex m-0 p-0 has-background-success">	
+							<div class="has-background-primary">
+
+
+		<div id="projectSlides2" class="container columns is-centered py-4 has-background-black">
+			<div class="tile is-ancestor box columns column has-background-danger is-10">
+			<div class="tile is-ancestor box columns column has-background-info is-10">
+				<div class="tile is-parent box column has-background-black">
+					<div class="tile box has-background-black">
+
+
+					<div class="tile has-background-warning is-flex is-flex-direction-column"> 
+						<transition mode="out-in" name="slide-fade" class="">
+							<router-view class=""></router-view>
+						</transition>	
+						<article class="tile is-child is-flex m-0 p-0 has-background-success    has-text-center has-text-info">	
+							<h3 id="" class="testTypeII">THIS SECTION IS A TEST || sway says hi</h3>
+							
+						</article> 
+						<div class="card-content p-0     has-background-danger">
+							<h3 id="" class="testTypeII">THIS SECTION IS A TEST || sway says hi</h3>
+
+							<div class="tile is-vertical has-background-primary p-4">
+								<div class="is-12 is-flex is-flex-direction-column has-background-info">	 
+							
+							<div class="tile is-vertical has-background-primary p-4">
+								<h3 id="" class="testTypeII">THIS SECTION IS A TEST || sway says hi</h3>
+								<ul>
+									<li>
+										<router-link to="/one">Digital Drumkit</router-link>
+									</li>
+									<li>
+										<router-link to="/two">Pusheen Zodiac</router-link>
+									</li>
+									<li>
+										<router-link to="/three">Natours</router-link>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+				</div>	
+			</div>	
+		</div>
+	</section> -->
+
+
+
+
+
+
+
+
+
+
+<!-- TEST TEXT OUTPUT PLACEHOLDER  -->
+		<!-- <h3 id="" class="testTypeII">THIS SECTION IS A TEST || sway says hi</h3> -->
+
+<!-- ARROW ICON TO CONTACT SECTION -->
+
+	<!-- </div>
+			<div class="hero-foot has-text-primary pt-5">
+				<div class="container has-text-centered"> -->
+					<!-- <span>&#x1F433</span>  -->
+					<!-- <br> -->
+					<!-- <a href="#contact-info"><i class="fas fa-angle-down welcome-down is-size-1 has-text-primary-dark"></i></a>
+				</div>
+			</div> -->
+
+
+<!-- TEST CAROUSEL  -->
+		<!-- <div id="appCarousel" class="app hero-body column is-flex-wrap-wrap is-centered has-background-black-ter mx-0">
+				<div id="carouselCon" class="carousel container column is-10 has-background-black">
+					<h3 id="" class="testTypeII">THIS SECTION IS A TEST || sway says hi</h3>
+					<slot id="carouselViewer" class="carousel-slide"></slot>
+				</div>	
+			</div> -->
+
+
+
+<!-- TEST PROJECT TILES  -->
+			<!-- <carousel id="carousel" class="hero-body columns is-flex-wrap-wrap is-centered has-background-black-ter mx-0">
+				<slide class="tile is-parent project-tile column is-4 box mr-6 is-primary"> -->
+				<!-- Slide 1 Content -->
+					<!-- <div class="tile is-parent project-tile column is-4 box mr-6 is-primary"> -->
+						<!-- <article class="tile is-child notification is-primary">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+							</figure>
+							<p class="title">Roast</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+						<article class="tile is-child notification is-primary">
+				</slide>
+				<slide class="column is-4 has-background-primary-light"> -->
+				<!-- Slide 2 Content -->
+				<!-- <div class="tile is-parent project-tile column is-4 box mr-6 is-primary">
+					<article class="tile is-child notification is-primary">
+						<figure class="image">
+							<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+						</figure>
+						<p class="title">Roast</p>
+						<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+						<a href="">See Project Here</a>
+					</article>
+				</div>
+				</slide>
+			</carousel> -->
+
+
+			<!-- <div id="carousel1" class="hero-body columns is-flex-wrap-wrap is-centered has-background-black-ter mx-0">
+				<div class="column is-10 has-background-primary-light">
+					<p>hello</p>
+				</div>
+
+		
+
+				<div id="slideshow" class="carousel column box columns is-flex is-flex-direction-row is-flex-wrap-wrap is-10 p-0 has-background-danger is-centered"> -->
+		
+				<!-- ROAST APP 		 -->
+					<!-- <div class="tile is-parent project-tile column is-4 box mr-6 is-primary">
+						<article class="tile is-child notification is-primary">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+							</figure>
+							<p class="title">Roast</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div> -->
+
+
+				<!-- DIGI DRUMKIT 		 -->
+					<!-- <div class="tile is-parent project-tile column is-4 box mr-6">
+						<article class="tile is-child notification is-warning">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+							</figure>
+							<p class="title">Drumkit</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div> -->
+
+				<!-- ZODIAC APP 		 -->
+					<!-- <div class="tile is-parent project-tile column is-4 box">
+						<article class="tile is-child notification is-danger">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+							</figure>
+							<p class="title">Zodiac</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div>	 -->
+						
+				<!-- NATOURS 		 -->
+					<!-- <div class="tile is-parent project-tile column is-4 box">
+						<article class="tile is-child notification is-success">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+							</figure>
+							<p class="title">Natours</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div>	 -->
+						
+				<!-- U-HOST 		 -->
+					<!-- <div class="tile is-parent project-tile column is-4 box">
+						<article class="tile is-child notification is-link">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+							</figure>
+							<p class="title">U-Host</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div>	  -->
+						
+				<!-- PATATAP 		 -->
+					<!-- <div class="tile is-parent project-tile box column is-6 mr-6">
+						<article class="tile is-child notification is-dark">
+							<figure class="image">
+								<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+							</figure>
+							<p class="title">Patatap</p>
+							<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+							<a href="">See Project Here</a>
+						</article>
+					</div>	 -->
+				<!-- closes project tiles div  -->
+				<!-- </div> -->
+
+
+	<!-- TEST CAROUSEL NUMBER 1 				 -->
+			<!-- <div id="appCarousel" class="app">hello sway
+				<div id="carouselCon" class="carousel"> 
+					<div id="carouselViewer" class="carousel-slide"></div>
+					<transition id="carouselViewer" class="carousel-slide"></transition>
+					<slot></slot>
+				</div>
+			</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <footer id="contact-info">
+	<div id="email-div" class="is-pulled-left">
+		<div class="title has-text-primary">Email Me:	</div>
+		<span class="subtitle has-text-white" id="myemail">jdemarrivera@gmail.com </span>
+		<span class="tooltip">
+			<span onclick="copyToClipboard('#myemail')" onmouseout="outFunc()">
+				<i class="fas fa-copy"></i>
+				<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+			</span>
+		</span>
+	</div>
+	
+
+	
+	<div id="social-div" class="has-text-primary has-text-right">
+		
+		<p class="subtitle has-text-white">Check me out on social media </p>
+		<div class="">
+			<a
+			href="https://www.linkedin.com/in/josuedrivera/"
+			target="_blank"
+			class="btn contact-details">
+			<i class="icon is-large fas fa-3x fab fa-linkedin"></i> 
+			LinkedIn
+		</a>
+		
+		<a
+		href="https://github.com/josuedrivera"
+		target="_blank"
+		class="btn contact-details">
+		<i class="icon is-large fas fa-3x fab fa-github"></i>
+		GitHub
+	</a>
+	
+	<a id="profile-link" 
+	href="https://codepen.io/josuedrivera"
+	target="_blank"
+	class="btn contact-details">
+	<i class="icon is-large fas fa-3x fab fa-codepen"></i>
+	CodePen
+	</a>
+
+	<a id="profile-link" 
+	href="https://www.freecodecamp.org/josuedrivera"
+	target="_blank"
+	class="btn contact-details">
+	<i class="icon is-large fas fa-3x fab fa-free-code-camp"></i>
+	FreeCodeCamp
+	</a>
+
+	<a
+	href="https://www.instagram.com/swaysauce/"
+	target="_blank"
+	class="btn contact-details">
+	<i class="icon is-large fas fa-3x fab fa-instagram"></i> 
+	Instagram
+	</a>
+
+	<a
+	href="https://www.facebook.com/worldgoneswayzee/"
+	target="_blank"
+	class="btn contact-details">
+	<i class="icon is-large fas fa-3x fab fa-facebook-square"></i> 
+	Facebook
+	</a>				
+	</div>
+	</div>
+
+	<div id="bulma">
+		<a href="https://bulma.io" class="is-pulled-right">
+			<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+		</a>
+	</div>
+	</footer>
+	<section id="rest">
+		<i class="far fa-copyright"></i>  
+		<div id="copyright">
+			<p>Josue Rivera 2020</p>
+		</div>
+		<div id="bulma">
+			<a href="https://bulma.io" class="is-pulled-right">
+				<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+			</a>
+		</div>
+	</section> -->
+
+
+<!-- more about meeeees -->
+
+	<!-- <section id="project-gallery" class="section is-fullheight has-background-grey-darker"> -->
+
+	<!-- <section class="section has-background-primary p-2"></section> -->
+
+	<!-- <section id="about-me" class="section hero is-fullheight has-background-grey-darker pb-0">
+	<div class="container columns is-centered py-6 has-background-black-ter">
+		<div class="tile is-ancestor box column columns has-background-danger is-10">
+			
+			<div class="tile">
+				<div class="tile is-parent is-vertical is-4 has-text-centered has-background-primary">
+					<article class="tile is-child  m-0 p-0 has-background-primary">
+						<div class=""> -->
+					<!-- headshot -->
+							<!-- <figure class="image  has-background-primary">
+								<img id="headshot" class="is-rounded box has-background-danger" src="img/headshotsm.jpg">
+							</figure> -->
+					<!-- name and title -->
+							<!-- <div class=" has-background-primary">
+								<h1 class="title has-text-danger"> Josue Rivera </h1>
+								<h2 class="subtitle has-text-black">
+									Front-End Developer 
+									| Creative Professional
+								</h2>
+							</div>	 -->
+					<!-- test paragraph -->
+							<!-- <div class="box has-background-primary has-text-light">
+								<h3></h3>
+								<p>hello, world</p>
+								<p>here are some of my favorite things: kittens, puppies, tacos, pizza, football, napping.</p>
+							</div> -->
+						<!-- closes bio column -->
+						<!-- </div>
+					</article>
+				</div>
+			
+			<div class="tile is-vertical has-background-primary is-8">
+				
+					<div class="tile is-parent">
+						<article class="tile is-child box"> -->
+							<!-- <div class=""> -->
+						<!-- vue router -->
+							<!-- <div id="content" class="column">
+								<div class="container">
+									<transition mode="out-in" name="bounce">
+										<router-view></router-view>
+									</transition>
+								</div>
+							</div> 
+						</article>
+					</div>
+
+					<div class="tile is-parent">
+						<article class="tile is-child m-0 p-0">
+							<div class="column has-background-primary"> -->
+							<!-- buttons  -->
+								<!-- <div class="buttons has-addons is-flex is-justify-content-flex-end is-align-content-flex-end">
+									<router-link 
+									class="button is-danger" 
+									to="/aboutMe">
+									About Me</router-link>
+				
+									<router-link 
+									class="button is-danger" 
+									to="/hardSkills">
+									Hard Skills</router-link>
+				
+									<router-link 
+									class="button is-danger" 
+									to="/softSkills">
+									Soft Skills</router-link>
+				
+									<router-link 
+									class="button is-inverted is-danger" 
+									to="/">
+										<i class="fas fa-lg fa-user-astronaut"></i>
+									</router-link>	
+								</div>  -->
+						<!-- closes column div  -->
+						<!-- </article>
+					</div>
+				</div>
+			</div>
+
+		</div> -->
+	<!-- closes container div  -->
+	<!-- </div>
+	
+
+	<div class="hero-foot has-text-primary">
+		<div class="container has-text-centered"> -->
+			<!-- <span>&#x1F433</span>  -->
+			<!-- <br> -->
+			<!-- <i class="fas fa-angle-down welcome-down is-size-1"></i>
+		</div>
+	</div>
+	
+	</section> -->
+
+	<!-- <div class="hero has-text-centered"> -->
+	
+	<!-- <section id="about-mee" class="section hero is-fullheight has-background-black-ter">
+		<div class="container columns is-centered py-6">
+			<div class="column is-3 has-text-centered has-background-primary pl-5 pt-5">
+				<div class="tile is-parent is-vertical is-4 has-text-centered">
+					<article class="tile is-child box m-0 p-0">
+						<div class="">
+							headshot
+							<figure class="image box has-background-primary">
+								<img id="headshot" class="is-rounded" src="img/headshotsm.jpg">
+							</figure>
+							name and title
+							<div class="box has-background-primary">
+								<h1 class="title has-text-danger"> Josue Rivera </h1>
+								<h2 class="subtitle has-text-black">
+									Front-End Developer 
+									| Creative Professional
+								</h2>
+							</div>	
+		test paragraph
+							<div class="box has-background-primary has-text-light">
+								<h3></h3>
+								<p>hello, world</p>
+								<p>here are some of my favorite things: kittens, puppies, tacos, pizza, football, napping.</p>
+							</div>
+					</div>	
+						closes bio column
+				</div>
+
+
+						
+
+			<div class="column is-7 has-background-primary is-flex-direction-row">
+		vue router
+				<div id="content" class="column">
+					<div class="container">
+						<transition mode="out-in" name="bounce">
+							<router-view></router-view>
+						</transition>
+					</div>
+				</div> 
+
+				<div class="column has-background-primary">
+		buttons 
+					<div class="buttons has-addons is-flex is-justify-content-flex-end is-align-content-flex-end">
+						<router-link 
+						class="button is-danger" 
+						to="/aboutMe">
+						About Me</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/hardSkills">
+						Hard Skills</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/softSkills">
+						Soft Skills</router-link>
+	
+						<router-link 
+						class="button is-inverted is-danger" 
+						to="/">
+							<i class="fas fa-lg fa-user-astronaut"></i>
+						</router-link>	
+					</div> 
+				closes column div 
+				</div>
+		closes container/columnS div 
+			</div>
+
+		</div>
+		<div class="hero-foot has-text-primary">
+			<div class="container has-text-centered mb-6">
+				<span>&#x1F433</span> 
+				<br>
+				<i class="fas fa-angle-down welcome-down is-size-1"></i>
+			</div>
+		</div>
+		
+	</section> -->
+
+
+
+
+
+
+
+
+	<!-- <section class="section has-background-danger"></section> -->
+			
+				
+	<!-- <section id="about-meee" class="section hero is-fullheight has-background-grey-darker">
+	<section id="about-me" class="section hero is-fullheight has-background-black">
+		<div class="container has-background-danger columns is-10">
+		<div class="container columns is-centered py-6">
+			<div class="tile is-ancestor box column has-background-primary">
+			<div class="column is-3 has-text-centered has-background-primary pl-5 pt-5">
+			<div class="tile is-ancestor box column has-background-primary is-3 has-text-centered pl-5 pt-5">
+
+
+				<div class="tile is-vertical has-background-primary">
+					<div class="tile">
+
+
+
+		headshot
+				<figure class="image box has-background-primary">
+					<img id="headshot" class="is-rounded" src="img/headshotsm.jpg">
+				</figure>
+		name and title
+				<div class="box has-background-primary">
+					<h1 class="title has-text-danger"> Josue Rivera </h1>
+					<h2 class="subtitle has-text-black">
+						Front-End Developer 
+						| Creative Professional
+					</h2>
+				</div>	
+		test paragraph
+				<div class="box has-background-primary has-text-light">
+					<h3></h3>
+					<p>hello, world</p>
+					<p>here are some of my favorite things: kittens, puppies, tacos, pizza, football, napping.</p>
+				</div>
+			closes bio column
+			</div>
+
+			<div class="column is-7 has-background-primary is-flex-direction-row">
+		vue router
+				<div id="content" class="column">
+					<div class="container">
+						<transition mode="out-in" name="bounce">
+							<router-view></router-view>
+						</transition>
+					</div>
+				</div> 
+
+				<div class="column has-background-primary">
+		buttons 
+					<div class="buttons has-addons is-flex is-justify-content-flex-end is-align-content-flex-end">
+						<router-link 
+						class="button is-danger" 
+						to="/aboutMe">
+						About Me</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/hardSkills">
+						Hard Skills</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/softSkills">
+						Soft Skills</router-link>
+	
+						<router-link 
+						class="button is-inverted is-danger" 
+						to="/">
+							<i class="fas fa-lg fa-user-astronaut"></i>
+						</router-link>	
+					</div> 
+				closes column div 
+				</div>
+		closes container/columnS div 
+			</div>
+
+		</div>
+		<div class="hero-foot has-text-primary">
+			<div class="container has-text-centered mb-6">
+				<span>&#x1F433</span> 
+				<br>
+				<i class="fas fa-angle-down welcome-down is-size-1"></i>
+			</div>
+		</div>
+		
+	</section> -->
+
+
+
+
+
+
+
+
+
+	<!-- <section class="section has-background-info"></section> -->
+	<!-- container columns is-centered py-6 -->
+
+
+
+	<!-- <section id="about-me" class="section is-large has-background-info">
+	<div id="about-div" class="container">
+		<div class="columns">
+
+			<div class="column is-5 has-background-grey-dark">
+				<figure class="image is-marginless">
+					<img id="headshot" class="is-rounded" src="img/headshotsm.jpg">
+				</figure>
+
+				<h1 class="title has-text-success">	Josue Rivera  </h1>
+				<h2 class="subtitle has-text-success">
+					Front-End Developer | Creative Professional
+				</h2>
+
+				<div class="container">
+					<div class="buttons has-addons">
+						<router-link 
+						class="button is-danger" 
+						to="/aboutMe">
+						About Me</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/hardSkills">
+						Hard Skills</router-link>
+	
+						<router-link 
+						class="button is-danger" 
+						to="/softSkills">
+						Soft Skills</router-link> -->
+	
+						<!-- <router-link 
+						class="button is-inverted is-danger" 
+						to="/">
+							<i class="fas fa-lg fa-user-astronaut"></i>
+						</router-link>	 -->
+					<!-- </div> 
+				</div> -->
+			<!-- closes column div  -->
+			<!-- </div>
+
+			<div id="content" class="column is-7 has-background-grey-dark">
+				<transition mode="out-in" name="bounce">
+					<router-view></router-view>
+				</transition>
+			</div>  -->
+		<!-- closes columnS div  -->				
+		<!-- </div> -->
+	<!-- closes container div  -->
+	<!-- </div> 
+	</section> -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- </div> -->
+
+	<!-- <section class="has-background-warning columns is-fullheight hero"> -->
+	<!-- <div class="has-background-warning columns is-fullheighthero"> -->
+	<!-- <div class=" has-background-warning columns"> -->
+
+	<!-- <div id="about-div" class="hero-body has-text-centered is-marginless column is-half">
+
+		<figure class="image is-marginless">
+			<img id="headshot" class="is-rounded" src="img/headshotsm.jpg">
+		</figure>
+
+		<h2 class="title has-text-danger">	Josue Rivera  </h2>
+		<p class="subtitle has-text-danger">
+			Front-End Developer | Creative Professional
+		</p>
+				
+		
+		<div class="container is-fluid buttons has-addons has-text-centered">
+			<router-link class="button is-danger" to="/aboutMe">About Me</router-link class="button is-danger">
+			<router-link class="button is-danger" to="/hardSkills">Hard Skills</router-link class="button is-danger">
+			<router-link class="button is-danger" to="/softSkills">Soft Skills</router-link class="button is-danger">
+			<router-link class="button is-inverted is-danger" to="/"><i class="fas fa-lg fa-user-astronaut"></i></router-link class="button is-danger">		
+		</div>
+	</div> -->
+	<!-- <div class="column has-background-info"></div> -->
+
+	<!-- <div id="content" class="has-background-danger column is-half p-6"> -->
+	<!-- <div id="content" class="has-background-danger column is-two-thirds p-6"> -->
+		<!-- <transition mode="out-in" name="bounce">
+			<router-view></router-view>
+		</transition>
+	</div> -->
+			
+
+			
+		<!-- test  -->
+			<!-- <div class="container is-fluid has-background-white">
+				<p class="title">About Me</p>
+				<hr>
+				<p class="subtitle">Hello World! My name is Josue. I am a front-end developer from the Bay Area. Please hire me; I need money really, really bad. Thanks!</p>
+				<p class="subtitle">I am enthusiastic and passionate about art, music, football, and web development. After over a decade in the fast-paced environment of Corporate Security and Emergency Response, I now look to transition my soft and hard skills into the world of Web Development.
+					<br>
+					<br>
+				As a Web Developer, I enjoy the challenge and demand of creative, solution based thinking it requires in order to produce content worthy of an audience. I am passionate about building as well as deconstructing 'things' while learning throughout the whole process. 
+					<br>
+					<br>
+				I have a focus on Front-End Development but I am also familiar with many aspects of Back-End programming. 
+				I am currently utilizing these skills to build personal projects for my portfolio, with the ultimate goal of joining a team that enjoys solving difficult problems and shares in my appreciation for direct, clear, and concise communication and open-minded feedback. 
+				</p>
+					<br>
+					<br>
+			</div> -->
+
+
+			<!-- <div class="container is-fluid has-background-white">
+				<p class="title">Hard Skills</p>
+				<p class="subtitle">
+					I have a focus on Front-End Development but I am also familiar with many aspects of Back-End programming. I am proficient with HTML, CSS (SCSS/SASS), and JavaScript (ECMAScript 5 and 6) as well as Responsive Design, Cross Browser Development, Browser Dev Tools, Testing/Debugging, Command Line, Git/Version Control, APIs and RESTful Routes. 
+				</p>
+
+				<ul>In addition, I also have experience with libraries, frameworks, and databases like:
+					<li>
+						jQuery,  Vue.js, JSON
+					</li>
+					<li>
+						Bootstrap 4,  Bulma, Semantic UI
+					</li>
+					<li>
+						Node.js, NPM and various node packages not limited to but including express.js and passport.js, MySQL, MongoDB, and I am currently learning Python
+					</li>
+				</ul>
+
+				<ul>Also experienced in:
+					<li>
+						Adobe XD, Adobe CC(Illustrator, Photoshop, InDesign)
+					</li>
+					<li>
+						MS Suite, Google Suite (including Apps Script)	
+					</li>
+					<li>
+						Content Management Systems
+					</li>
+					<li>
+						JIRA - Issue and Project Tracking Software
+					</li>
+				</ul>				
+			</div> -->
+
+
+			<!-- <div class="container is-fluid has-background-white">
+				<p class="title">Soft Skills</p>
+				<p class="subtitle">A list of my soft skills bc I like people...</p>
+				<ul> Core Competencies:
+					<li>
+						Conceptual/Creative Thinking
+					</li>
+					<li>
+						Adaptable/Solution Oriented
+					</li>
+					<li>
+						Drive for Efficiency
+					</li>
+					<li>
+						Embraces Teamwork
+					</li>
+					<li>
+						Empowering of Others
+					</li>
+					<li>
+						Accountable & Approachable
+					</li>
+					<li>
+						Empathic and Open Minded
+					</li>
+					<li>
+						Willingness to Grow 
+					</li>
+					<li>
+						Self-Starter/Motivated
+					</li>
+					<li>
+						Interpersonal Awareness
+					</li>
+					<li>
+						Ability To Take Criticism • Learn From Mistakes
+					</li>
+					<li>
+						Excellent Written and Verbal Communication Skills  
+					</li>
+				</ul>
+			</div> -->
+			
+
+		<!-- </div> -->
+
+	<!-- </div> -->
+	<!-- </section> -->
+
+
+
+
+
+
+
 <!-- ABOUT ME -->
 <!-- SKILLS -->
 <!-- EXPERIENCE -->
 <!-- PROJECTS SECTION-->
-	<section id="projects" class="section has-background-success">
-		<div class="container has-background-info">
-			<h1 class="title">Projects</h1>
+	<!-- <section id="projects" class="section">
+		<div class="container has-text-centered">
+			<h1 class="title has-text-primary">Project Gallery</h1>
+			<hr>
 		</div>
-		<div class="hero is-fullheight has-background-danger">
-			<div class="container has-background-warning">
-				<p>hello world</p>
+		
+		<div id="projects-div" class="tile is-ancestor">
+			<div class="tile is-parent column is-half project-tile has-background-primary">
+				<article class="tile is-child notification is-primary">
+					<figure class="image">
+						<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+					</figure>
+					<p class="title">Roast</p>
+					<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+					<a href="">See Project Here</a>
+				</article>
 			</div>
-			<div>
-				<a class="button is-primary">
-					Button
-				  </a>
-				  <a class="button is-link">
-					Button
-				  </a>
-				  <a class="button is-info">
-					Button
-				  </a>
-				  <a class="button is-success">
-					Button
-				  </a>
-				  <a class="button is-warning">
-					Button
-				  </a>
-				  <a class="button is-danger">
-					Button
-				  </a>
+			<div class="tile is-parent column is-half project-tile has-background-primary">
+				<article class="tile is-child notification is-primary">
+					<figure class="image">
+						<img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+					</figure>
+					<p class="title">Drumkit</p>
+					<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+					<a href="">See Project Here</a>
+				</article>
 			</div>
-			<div>
-				<a class="button has-background-black-bis has-text-white">
-					Button
-				  </a>
-				  <a class="button has-background-black-ter has-text-white">
-					Button
-				  </a>
-				  <a class="button has-background-grey-darker has-text-white">
-					Button
-				  </a>
-				  <a class="button has-background-grey-dark has-text-white">
-					Button
-				  </a>
-				  <a class="button has-background-grey-light">
-					Button
-				  </a>
-				  <a class="button has-background-grey-lighter">
-					Button
-				  </a>
-				  <a class="button has-background-white-ter">
-					Button
-				  </a>
-				  <a class="button has-background-white-bis">
-					Button
-				  </a>
+			<div class="tile is-parent column is-half project-tile has-background-primary">
+				<article class="tile is-child notification is-primary">
+					<figure class="image">
+						<img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+					</figure>
+					<p class="title">Zodiac</p>
+					<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+					<a href="">See Project Here</a>
+				</article>
 			</div>
+			<div class="tile is-parent column is-half project-tile has-background-primary">
+				<article class="tile is-child notification is-primary">
+					<figure class="image">
+						<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+					</figure>
+					<p class="title">Title</p>
+					<p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+					<a href="">See Project Here</a>
+				</article>
+			</div> -->
+
+
+
+
+
+
+
+			<!-- <div class=" project-tile has-background-primary">
+				<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+				<div>
+					<p class="subtitle has-text-weight-bold">Roast</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+					<a href="">See Project Here</a>
+				</div>
+			</div>
+
+
+			<div class="project-tile has-background-primary">
+				<img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+				<p class="subtitle">Drumkit</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+				<a href="">See Project Here</a>
+			</div>
+
+
+			<div class="project-tile has-background-primary">
+				<img src="https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+				<p class="subtitle">Zodiac</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+				<a href="">See Project Here</a>
+			</div>
+
+
+			<div class="project-tile has-background-primary">
+				<img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="">
+				<p class="subtitle">Title</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic explicabo vero?</p>
+				<a href="">See Project Here</a>
+			</div>
+			
 		</div>
-	</section>
-<!-- FOOTER SECTION-->
-	<section id="footer" class="section has-background-grey-dark">
+	</section> -->
+
+<!-- TEST FOOTER SECTION-->
+	<!-- <section id="footer" class="section has-background-grey-dark">
 		<div class="hero is-large has-background-primary">
 			<h2 class="title">Hello WOrld</h2>
 			<p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum?</p>
@@ -481,9 +2042,9 @@
 					<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
 				</a>
 			</div> 
-			<!-- <div class="column is-full has-background-warning">
+			<div class="column is-full has-background-warning">
 				<p>select a window to expand</p>
-			</div>	-->	
+			</div>		
 		</footer>
 		<div class="has-background-black is-paddingless">
 			<div class="content">
@@ -504,7 +2065,7 @@
 				<i class="fas fa-angle-left"></i>
 				<i class="fas fa-angle-right"></i>
 				<i class="fas fa-slash"></i>
-				<!-- https://fontawesome.com/icons/slash?style=solid -->
+				https://fontawesome.com/icons/slash?style=solid
 				<i class="fas fa-mobile"></i>
 	
 				<i class="fab fa-facebook-square"></i>
@@ -527,230 +2088,31 @@
 				<i class="fas fa-paint-brush"></i>
 				<i class="fas fa-fill-drip"></i>
 				<i class="fas fa-crop"></i>
+
+				<i class="fas fa-cat"></i>
 			</div>
 		</div>
-	</section>
-
-<!-- TEST FOOTER -->
-	<footer class="footer columns has-background-grey-dark">
-		<div class="tile is-ancestor">
-			<div class="tile is-parent is-half">
-				<div class="tile is-child box is-paddingless">
-				  <!-- <p class="title">Three: Me</p> -->
-				  <article class="tile is-child notification has-background-grey-darker">
-					  <figure class="image is-128x128 ">
-						<img id="footer-logo" src="img/headshot.JPG">
-					  </figure>
-					  <h5 class="title">contact me:
-						<strong>myeamil@email.com</strong>
-					</h5>
-					<h6 class="subtitle">&copy;2020 
-						<strong>josuerivera.com</strong>
-					</h6>
-
-					  <!-- <p class="title">Three</p>
-					  <p class="subtitle">With an image</p> -->
-					</article>
-				</div>
-			  </div>
+	</section>  -->
 
 
-			<div class="tile is-half is-vertical is-parent">
-			  <div class="tile is-child box is-paddingless">
-				<article class="tile is-child notification has-text-primary  has-background-grey-darker is-pulled-right">
-					<!-- <p class="title">One: Socials</p> -->
-					<i class="icon is-large fas fa-3x fab fa-github"></i>
-					<i class="icon is-large fas fa-3x fab fa-linkedin"></i>
-					<i class="icon is-large fas fa-3x fab fa-facebook-square"></i>
-					<i class="icon is-large fas fa-3x fab fa-instagram"></i>
-				</article>
-			  </div>
-			  <div class="tile is-child box is-paddingless">
-				<!-- <p class="title">Two: Sponsors</p> -->
-				<article class="tile is-child notification has-background-grey-darker">
-					<a href="https://bulma.io" class="is-pulled-right">
-						<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-					</a>
-				</article>
-			  </div>
-			</div>
-			
-		  </div>
-
-		<!-- <div class="tile is-ancestor">
-			<div class="tile is-vertical is-8">
-			  <div class="tile">
-				<div class="tile is-parent is-vertical">
-				  <article class="tile is-child notification is-primary">
-					<p class="title">Vertical...</p>
-					<p class="subtitle">Top tile</p>
-				  </article>
-				  <article class="tile is-child notification is-warning">
-					<p class="title">...tiles</p>
-					<p class="subtitle">Bottom tile</p>
-				  </article>
-				</div> -->
-				<!-- <div class="tile is-parent">
-					<article class="tile is-child notification is-info">
-					  <p class="title">Middle tile</p>
-					  <p class="subtitle">With an image</p>
-					  <figure class="image is-4by3">
-						<img src="https://bulma.io/images/placeholders/640x480.png">
-					  </figure>
-					</article>
-				  </div> -->
-				 
-				 
-				 
-				  <!-- <div class="container has-background-warning">
-					<p>select a window to expand</p>
-				</div> -->
-	</footer>
-
-<!-- TEST SECTION   -->
-	<section class="hero is-cover has-background-image is-fullheight">
-		<!-- Hero head: will stick at the top -->
-		<div class="hero-head">
-			
-		</div>
-	  
-		<!-- Hero content: will be in the middle -->
-		<div class="hero-body">
-		  <div class="container has-text-centered">
-			<h1 class="title">
-			  Title
-			</h1>
-			<h2 class="subtitle">
-			  Subtitle
-			</h2>
-			
-
-			<div class=" columns has-background-black-ter">
-				<div class="tile is-ancestor">
-					<div class="tile is-parent is-half is-paddingless">
-						<div class="tile is-child box is-paddingless">
-						  <!-- <p class="title">Three: Me</p> -->
-						  <article class="tile is-child notification has-background-grey-light">
-							  <figure class="image is-128x128 ">
-								<img id="footer-logo" src="img/headshot.JPG">
-							  </figure>
-							  <h5 class="">contact me:
-								<strong>myeamil@email.com</strong>
-							</h5>
-							<h6 class="">&copy;2020 
-								<strong>josuerivera.com</strong>
-							</h6>
-		
-							  <!-- <p class="title">Three</p>
-							  <p class="subtitle">With an image</p> -->
-							</article>
-						</div>
-					  </div>
-		
-		
-					<div class="tile is-half is-vertical is-parent">
-					  <div class="tile is-child box is-paddingless">
-						<article class="tile is-child notification has-text-primary  has-background-grey-darker is-pulled-right">
-							<!-- <span class="title"><i class="icon is-large fas fa-3x fab fa-slack-hash"></i>GAWDAMUPDOPE</span> -->
-
-
-							<i class="icon is-large fas fa-3x fab fa-github"></i>
-							<i class="icon is-large fas fa-3x fab fa-linkedin"></i>
-							<i class="icon is-large fas fa-3x fab fa-facebook-square"></i>
-							<i class="icon is-large fas fa-3x fab fa-instagram"></i>
-						</article>
-					  </div>
-					  <div class="tile is-child box is-paddingless">
-						<!-- <p class="title">Two: Sponsors</p> -->
-						<article class="tile is-child notification has-background-grey-dark">
-							<a href="https://bulma.io" class="is-pulled-right">
-								<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-							</a>
-						</article>
-					  </div>
-					</div>
-					
-				  </div>
-		
-				<!-- <div class="tile is-ancestor">
-					<div class="tile is-vertical is-8">
-					  <div class="tile">
-						<div class="tile is-parent is-vertical">
-						  <article class="tile is-child notification is-primary">
-							<p class="title">Vertical...</p>
-							<p class="subtitle">Top tile</p>
-						  </article>
-						  <article class="tile is-child notification is-warning">
-							<p class="title">...tiles</p>
-							<p class="subtitle">Bottom tile</p>
-						  </article>
-						</div> -->
-						<!-- <div class="tile is-parent">
-							<article class="tile is-child notification is-info">
-							  <p class="title">Middle tile</p>
-							  <p class="subtitle">With an image</p>
-							  <figure class="image is-4by3">
-								<img src="https://bulma.io/images/placeholders/640x480.png">
-							  </figure>
-							</article>
-						  </div> -->
-						 
-						 
-						 
-						  <!-- <div class="container has-background-warning">
-							<p>select a window to expand</p>
-						</div> -->
-					</div>
-
-
-
-
-
-
-
-
-
-		  </div>
-		</div>
-		
-
-
-
-
-		<!-- Hero footer: will stick at the bottom -->
-		<div class="hero-foot">
-		  <nav class="tabs is-boxed is-fullwidth">
-			<div class="container">
-			  <ul>
-				<li><a>Home</a></li>
-				<li><a>About Me</a></li>
-				<li><a>My Projects</a></li>
-				<li class="is-active"><a>Contact Info</a></li>
-				<li><a>Resume</a></li>
-				<li><a>???</a></li>
-			  </ul>
-			</div>
-		  </nav>
-		</div>
-	  </section>
 
 	  
-
+<!-- ... -->
 
 <!-- SCRIPTS -->
 	<!-- FontAwesome for Bulma -->
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	<!-- jQuery slim 3.3.1 script -->
-		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<!-- jQuery Popper scritp -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
 	<!-- Bootstrap script -->
 		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
 	<!-- Vue JS CDN script -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<!-- Vue Router CDN script -->
-		<!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 	<!-- custom JS script -->
-		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

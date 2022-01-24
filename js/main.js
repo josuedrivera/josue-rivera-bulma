@@ -298,7 +298,12 @@ var projects = new Vue({
 
 
 
-
+funct () {
+  //looop through array of numbers
+  
+  //divide each number to check
+  //
+}
 
 
 

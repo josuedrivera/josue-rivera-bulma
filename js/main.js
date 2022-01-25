@@ -1,14 +1,14 @@
 console.log("connected");
 
-const Vue.createApp({
-  data() {
-    return {
+// const Vue.createApp({
+//   data() {
+//     return {
 
-    };
-  }
-}).$mount('#idName');
+//     };
+//   }
+// }).$mount('#idName');
 
-const 
+// const 
 
 
 // COPY EMAIL
@@ -35,14 +35,14 @@ function copyToClipboard(element) {
 //     tooltip.innerHTML = "Copy to clipboard";
 //   }
 
-const Display = {
-    template: `
-      <div class="user">
-        <h2>User {{ $route.params.id }}</h2>
-        <router-view></router-view>
-      </div>
-    `
-  }
+// const Display = {
+//     template: `
+//       <div class="user">
+//         <h2>User {{ $route.params.id }}</h2>
+//         <router-view></router-view>
+//       </div>
+//     `
+//   }
 
 
 // VUE TRANSITION TEST 
@@ -298,12 +298,12 @@ var projects = new Vue({
 
 
 
-funct () {
+// funct () {
   //looop through array of numbers
   
   //divide each number to check
   //
-}
+// }
 
 
 

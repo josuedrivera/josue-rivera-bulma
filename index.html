@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="">
+<body id="webApp">
 <!-- BURGER AND NAVIGATION	 -->
 	<div class="navigation">
 		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -52,7 +52,7 @@
 						<span>01</span> About Me </a>
 				</li>
 				<li class="navigation__item">
-					<a href="#blog" class="navigation__link">
+					<a href="#blog-podcast" class="navigation__link">
 						<span>02</span> Blog & Podcast </a>
 				</li>
 				<li class="navigation__item">
@@ -116,7 +116,7 @@
 
 
 <!-- ABOUT ME SECTION -->
-	<section id="about-me" class="section hero is-fullheight has-background-black-ter pt-2">
+	<section id="about-me" class="section hero is-fullheight has-background-black-ter py-6">
 		<div class="columns column is-8 is-offset-2 my-0">
 			<div class="columns column m-0 p-0 has-background-black-ter">
 				<h2 class="title is-size-1 has-text-primary-dark">ABOUT ME</h2>
@@ -163,7 +163,7 @@
 										<i class="fas fa-paw"></i>
 										
 									</span> -->
-									<a href="#blog">
+									<a href="#blog-podcast">
 										<span class="is-block has-text-warning is-size-3">
 											<i class="fas fa-angle-down welcome-down is-size-3 has-text-warning p-0 m-0"></i> Checkout My Work</span>
 									</a>
@@ -195,10 +195,11 @@
 
 							<!-- vue router -->
 							<div id="about-me" class="">
-								<div class="has-background-warning">
-									<transition mode="out-in" name="bounce">
+								<div class="has-background-grey-darker">
+									<div v-html="softSkill"></div>
+									<!-- <transition mode="out-in" name="bounce">
 										<router-view></router-view>
-									</transition>
+									</transition> -->
 								</div>
 							</div>
 
@@ -234,8 +235,8 @@
 	</section>
 
 
-<!-- BLOG SECTION -- for future deployment -->
-	<section id="my-blog" class="section hero is-fullheight has-background-black-ter pt-2">
+<!-- BLOG SECTION -->
+	<section id="blog-podcast" class="section hero is-fullheight has-background-black-ter py-6">
 		<div class="columns column is-8 is-offset-2 my-0">
 			<div class="columns column has-background-black-ter is-flex is-justify-content-flex-end m-0 p-0">
 				<h2 class="title is-size-1 has-text-danger">MY PERSPECTIVE</h2>
@@ -243,12 +244,9 @@
 		</div>
 
 
-		<div id="blog" class="container columns is-centered py-4">
+		<div id="" class="container columns is-centered py-4">
 			<div class="box column columns has-background-danger is-10">
 				<div class="card-content box has-background-black-ter  is-12 p-3">
-
-
-
 
 
 					<div class="tile is-ancestor">
@@ -335,7 +333,7 @@
 
 
 <!-- PROJECTS SECTION -->
-	<section id="project-gallery" class="section hero is-fullheight has-background-black-ter pt-2">
+	<section id="project-gallery" class="section hero is-fullheight has-background-black-ter py-6">
 		<div class="columns column is-8 is-offset-2 my-0">
 			<div class="columns column has-background-black-ter m-0 p-0">
 				<h2 class="title is-size-1 has-text-grey-light"> PROJECT GALLERY</h2>
@@ -368,6 +366,15 @@
 														<router-viewer></router-viewer>
 													</transition>   -->
 
+													
+													<p>{{ projectName }}</p>
+													<img :src="projectImg" alt="">
+													<a v-bind:href="projectLink">Open {{ projectName }} in a new window.</a>
+
+													<div v-html="projCard"></div>
+													
+													
+													
 													<transition mode="out-in" name="moveInLeft" class="">
 														<router-view class=""></router-view>
 													</transition>
@@ -380,70 +387,70 @@
 									</article>
 								</div>
 
-								<div class="tile is-parent is-3 has-text-centered p-4">
+								<div class="tile is-parent is-3 has-background-grey-darker has-text-centered p-4">
 									<article
 										class="tile is-child  m-0 is-size-4 is-flex is-justify-content-flex-end is-align-items-center">
 
 										<!-- MY PROJECTS: LIST  -->
 										<ul class="px-4">
 											<li class="">
-												<router-link to="/one" class="has-text-primary-dark">Digital Drumkit
+												<router-link to="/one" class="has-text-primary">Digital Drumkit
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/two" class="has-text-primary-dark">Pusheen Zodiac
+												<router-link to="/two" class="has-text-primary">Pusheen Zodiac
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/three" class="has-text-primary-dark">Natours
+												<router-link to="/three" class="has-text-primary">Natours
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/four" class="has-text-primary-dark">Color Guess
+												<router-link to="/four" class="has-text-primary">Color Guess
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/five" class="has-text-primary-dark">Monster Attack
+												<router-link to="/five" class="has-text-primary">Monster Attack
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/six" class="has-text-primary-dark">To Do App
+												<router-link to="/six" class="has-text-primary">To Do App
 												</router-link>
 											</li>
 											<li class="">
-												<router-link to="/seven" class="has-text-primary-dark">Score Keeper
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/eight" class="has-text-primary-dark">Roast Sway
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/nine" class="has-text-primary-dark">Villains
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/ten" class="has-text-primary-dark">U-Host
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/eleven" class="has-text-primary-dark">Patatap Clone
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/twelve" class="has-text-primary-dark">Aurora Grove
-												</router-link>
-											</li>
-											<li class="">
-												<router-link to="/thirteen" class="has-text-primary-dark">Bulma
-													Portfolio</router-link>
-											</li>
-											<li class="">
-												<router-link to="/fourteen" class="has-text-primary-dark">Faithful Quiz
+												<router-link to="/seven" class="has-text-primary">Score Keeper
 												</router-link>
 											</li>
 											<!-- <li class="">
-												<router-link to="/fifteen" class="has-text-primary-dark">Faithful Quiz
+												<router-link to="/eight" class="has-text-primary">Roast Sway
+												</router-link>
+											</li>
+											<li class="">
+												<router-link to="/nine" class="has-text-primary">Villains
+												</router-link>
+											</li>
+											<li class="">
+												<router-link to="/ten" class="has-text-primary">U-Host
+												</router-link>
+											</li>
+											<li class="">
+												<router-link to="/eleven" class="has-text-primary">Patatap Clone
+												</router-link>
+											</li>
+											<li class="">
+												<router-link to="/twelve" class="has-text-primary">Aurora Grove
+												</router-link>
+											</li>
+											<li class="">
+												<router-link to="/thirteen" class="has-text-primary">Bulma
+													Portfolio</router-link>
+											</li>
+											<li class="">
+												<router-link to="/fourteen" class="has-text-primary">Faithful Quiz
+												</router-link>
+											</li> -->
+											<!-- <li class="">
+												<router-link to="/fifteen" class="has-text-primary">Faithful Quiz
 												</router-link>
 											</li> -->
 										</ul>
@@ -453,7 +460,7 @@
 
 						</div>
 
-						<footer class="card-footer has-background-danger is-flex is-justify-content-center">
+						<footer class="card-footer has-background-primary is-flex is-justify-content-center">
 
 							<h3 id="">
 								<a href="#contact-info" class="is-size-4 has-text-white">
@@ -472,7 +479,7 @@
 
 
 <!-- CONTACT/FOOTER SECTION -->
-	<section id="contact-info" class="hero is-fullheight has-background-black-ter pt-2">
+	<section id="contact-info" class="hero is-fullheight has-background-black-ter pt-6">
 		<!-- <div class="columns column is-8 is-offset-2 my-0">
 			<div class="columns column m-0 p-0 has-background-black-ter">
 				<h2 class="title is-size-1 has-text-warning">CONTACT INFO</h2>
@@ -543,7 +550,7 @@
 							</div>
 
 
-							<div class="">
+							<div class="has-text-grey-light">
 								Video by:
 								<a href="https://instagram.com/freecreativestuff" class=" pl-3">
 									<i class="fab fa-instagram"></i> Free Creative Stuff
@@ -553,7 +560,7 @@
 							</div>
 
 
-							<div class="is-size-5">
+							<div class="has-text-white is-size-5">
 								<span class="">
 									This website was made using:
 								</span>
@@ -662,7 +669,8 @@
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script> -->
 	<!-- Vue JS CDN script -->
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+	<script src="https://unpkg.com/vue@next"></script>
 	<!-- Vue Router CDN script -->
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 	<!-- custom JS script -->
